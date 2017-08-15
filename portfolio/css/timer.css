@@ -1,0 +1,61 @@
+body {
+  background-color: #333;
+  color: white;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+.break, .session {
+  font-size: 25px;
+}
+.break a, .session a {
+  color: white;
+  text-decoration: none;
+}
+
+#state {
+  text-align: center;
+}
+
+.clock {
+  margin-top: 50px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 100px;
+  line-height: 1;
+}
+
+.control-caret {
+  padding-left: 90px;
+  padding-right: 90px;
+}
+.control-caret .fa {
+  color: #292B2C;
+  font-size: 100px;
+  line-height: 0.5;
+}
+
+#min, #sec {
+  line-height: 0.5;
+  border: 1px #333 solid;
+  border-radius: 5px;
+  min-width: 230px;
+  line-height: 1.1;
+}
+
+#start, #reset {
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#start .fa, #reset .fa {
+  font-size: 70px;
+}
+
+.disabled {
+  color: #aaa !important;
+  cursor: default;
+}

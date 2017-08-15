@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pomodoro Timer - Chris Tse</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/timer.css">
+</head>
+<body>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1 class="text-center" style="margin-bottom: 50px">Pomodoro</h1>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col">
+				<p>Break Length</p>
+				<p class="break"><a href="#" id="bdown" class="disablable">-</a> <span id="b">5</span> <a href="#" id="bup" class="disablable">+</a></p>
+			</div>
+			<div class="col">
+				<p>Session Length</p>
+				<p class="session"><a href="#" id="sdown" class="disablable">-</a> <span id="s">25</span> <a href="#" id="sup" class="disablable">+</a></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<h3 id="state">　</h3>
+				<div class="clock">
+					<span id="min">25</span>:<span id="sec">00</span>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="margin-top: 50px">
+			<div class="col text-right">
+				<a href="#" id="start"><i class="fa fa-play"></i></a>
+			</div>
+			<div class="col text-left">
+				<a href="#" id="reset" class="disablable"><i class="fa fa-undo"></i></a>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/timer.js"></script>
+</body>
+</html>

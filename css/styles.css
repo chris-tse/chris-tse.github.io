@@ -1,0 +1,417 @@
+* {
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  color: #222
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  font-size: 24px;
+}
+
+body {
+  margin-top: 50px;
+  font-family: Muli, Helvetica, Arial, sans-serif;
+}
+
+.navbar-fixed-top {
+  margin-bottom: 0;
+}
+
+.navbar-inverse {
+  background-color: #036396;
+  border-color: #1f2c7b;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-inverse .navbar-brand, .nav.navbar-nav.navbar-right > li > a {
+  color: #ddd;
+}
+.navbar-inverse .navbar-brand:hover, .nav.navbar-nav.navbar-right > li > a:hover {
+  color: white;
+}
+
+main {
+  margin: 50px auto;
+  margin-bottom: 0;
+}
+
+.landing {
+  background: #0476B5;
+}
+.landing .landing-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.landing .landing-top .profilepic {
+  width: 200px;
+  border-radius: 50%;
+  display: block;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.landing .landing-top .landing-text {
+  color: white;
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+  font-weight: 200;
+}
+.landing .landing-top .landing-text small {
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.landing .landing-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+     -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.landing .landing-bottom .btn-white {
+  background: white;
+  color: #0476B5;
+}
+
+.landing .landing-bottom .btn-white:hover {
+  background: #ddd;
+}
+
+.about {
+  background: url("http://chris-tse.com/images/oudark1920.jpg") no-repeat center fixed;
+  webkit-background-size: cover;
+  background-size: cover;
+  color: white;
+}
+
+.about h1, .portfolio h1 {
+  margin: 0;
+}
+.about p, .portfolio p {
+  font-weight: 200;
+  line-height: 1.8;
+  margin: 0 auto;
+  color: white;
+}
+
+.portfolio {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  background: #eee;
+}
+
+.portfolio h1 {
+  margin-bottom: 30px;
+}
+
+.port-item {
+  background: white;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  color: #222;
+}
+
+.port-item:hover {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  text-decoration: none;
+  color: #333;
+}
+
+/*.port-item .over {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.port-item:hover .over {
+  display: block;
+}*/
+
+.port-item h3, .port-item img {
+  text-align: center;
+  width: 100%;
+}
+
+p.sad {
+  font-size: 1.3rem;
+  color: #aaa;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #888;
+  color: white;
+  text-align: center;
+  padding: 20px 20px 10px 20px;
+}
+
+.footer .info p {
+  color: white;
+}
+.footer .connect {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 280px;
+  margin: 20px auto;
+}
+.footer .connect a {
+  display: inline-block;
+  padding: 15px 17px;
+  background: white;
+  border-radius: 5px;
+}
+
+.footer .connect a:hover {
+  background: #ddd;
+}
+
+.footer .connect a .fa {
+  color: #888;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 749px) {
+  main .about, main .portfolio {
+    padding: 70px 20px;
+  }
+
+  .landing {
+    min-height: 480px;
+    padding: 30px 5px;
+  }
+  .landing .landing-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .landing .landing-top .profilepic {
+    width: 130px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .landing .landing-top h1.landing-text {
+    text-align: center;
+    margin-left: 0;
+    line-height: 1;
+    font-size: 1.7rem;
+    margin-bottom: 0;
+  }
+  .landing .landing-top h2.landing-text {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+  .landing .landing-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 25px;
+  }
+  .landing .landing-bottom .btn-white {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    width: 80%;
+  }
+
+  .about {
+    background: url("http://chris-tse.com/images/oudarkmobile.jpg") no-repeat center fixed;
+  }
+  .about h1 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  .about p {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 0.8rem;
+  }
+
+  .port-item {
+    width: 100%;
+    max-width: 500px;
+    min-width: 300px;
+  }
+}
+@media (min-width: 750px) and (max-width: 949px){
+  .landing {
+    padding: 70px 0;
+    min-height: 380px;
+  }
+  .landing .landing-top h1.landing-text {
+    text-align: left;
+    margin-left: 25px;
+    line-height: 0.8;
+    font-size: 2.5rem;
+    margin-top: 50px;
+  }
+  .landing .landing-top h2.landing-text {
+    font-size: 0.9rem;
+    line-height: 0.8;
+    margin-left: 25px;
+    padding-left: 5px;
+  }
+  .landing .landing-bottom {
+    margin-top: 60px;
+    max-width: 500px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .landing .landing-bottom .btn-white {
+    margin-left: 32px;
+    font-size: 0.9rem;
+    padding: 10px 18px;
+  }
+
+  .landing .landing-bottom .btn-white:nth-child(2) {
+    margin-left: 150px;
+  }
+
+  .about {
+    padding: 95px 30px;
+  }
+
+  .portfolio {
+    padding: 50px 30px;
+  }
+
+  .about h1, .portfolio h1 {
+    margin-bottom: 50px;
+    font-size: 1.8rem;
+  }
+  .about p {
+    font-size: 1rem;
+    max-width: 900px;
+  }
+
+  .port-item {
+    width: 300px;
+  }
+}
+@media (min-width: 950px) {
+  .landing {
+    padding: 100px 0;
+    min-height: 380px;
+  }
+  .landing .landing-top h1.landing-text {
+    text-align: left;
+    margin-left: 25px;
+    line-height: 0.8;
+    font-size: 2.8rem;
+    margin-top: 50px;
+  }
+  .landing .landing-top h2.landing-text {
+    font-size: 1.1rem;
+    line-height: 0.8;
+    margin-left: 25px;
+    padding-left: 5px;
+  }
+  .landing .landing-bottom {
+    margin-top: 60px;
+    max-width: 500px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .landing .landing-bottom .btn-white {
+    margin-left: 32px;
+    font-size: 1rem;
+    padding: 10px 22px;
+  }
+
+  .landing .landing-bottom .btn-white:nth-child(2) {
+    margin-left: 150px;
+  }
+
+  .about {
+    padding: 150px 30px;
+  }
+
+  .portfolio {
+    padding: 55px 30px;
+  }
+  .about h1 {
+    margin-bottom: 50px;
+    font-size: 1.8rem;`
+  }
+  .about p {
+    font-size: 1rem;
+    max-width: 900px;
+  }
+
+  .port-item {
+    width: 500px;
+    margin: 0 10px 50px 10px;
+
+  }
+}
