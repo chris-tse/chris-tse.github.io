@@ -287,9 +287,16 @@ p.sad {
   }
 }
 @media (min-width: 750px) and (max-width: 949px){
+  .navbar-inverse .navbar-brand, .nav.navbar-nav.navbar-right > li > a {
+    color: #ddd;
+    font-size: 17px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .landing {
     padding: 70px 0;
-    min-height: 380px;
+    min-height: 400px;
   }
   .landing .landing-top h1.landing-text {
     text-align: left;
@@ -351,6 +358,13 @@ p.sad {
   }
 }
 @media (min-width: 950px) {
+  .navbar-inverse .navbar-brand, .nav.navbar-nav.navbar-right > li > a {
+    color: #ddd;
+    font-size: 19px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
   .landing {
     padding: 100px 0;
     min-height: 380px;
