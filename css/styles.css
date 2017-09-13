@@ -170,7 +170,7 @@ p.sad {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #888;
+  background: #036396;
   color: white;
   text-align: center;
   padding: 20px 20px 10px 20px;
@@ -209,7 +209,7 @@ p.sad {
 }
 
 .footer .connect a .fa {
-  color: #888;
+  color: ##036396;
   font-size: 1.5rem;
 }
 
