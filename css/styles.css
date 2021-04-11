@@ -93,7 +93,7 @@ main {
 }
 
 .about {
-  background: url("https://chris-tse.com/images/oudark1920.jpg") no-repeat center fixed;
+  background: url("/images/oudark1920.jpg") no-repeat center fixed;
   webkit-background-size: cover;
   background-size: cover;
   color: white;
@@ -267,7 +267,7 @@ p.sad {
   }
 
   .about {
-    background: url("https://chris-tse.com/images/oudarkmobile.jpg") no-repeat center fixed;
+    background: url("/images/oudarkmobile.jpg") no-repeat center fixed;
   }
   .about h1 {
     font-size: 1.3rem;
